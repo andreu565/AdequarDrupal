@@ -1,0 +1,15 @@
+numberRows.form:
+  path: '/numberRows-form'
+  defaults:
+    _title: 'Introdueix un número'
+    _form: \Drupal\numberRows\Form\NumberRowsForm
+  requirements:
+    _access: 'TRUE'
+
+numberRows.rows:
+  path: '/numberRows/{numero}'
+  defaults:
+    _controller: \Drupal\numberRows\Controller\NumberRowsController::numberRows
+  requirements:
+    _access: 'TRUE'
+    user: \d+

@@ -1,0 +1,5 @@
+name: Quantitats Files
+type: module
+description: Número de files d'una taula depenent del número introduït
+core_version_requirement: ^9
+package: Custom
